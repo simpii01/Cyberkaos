@@ -1,0 +1,177 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  background: repeating-linear-gradient(to right, #74832F, #74832F 90px, #ffffff 80px, #ffffff 175px);
+  color: #fff;
+}
+
+.monster-bg {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.monster-bg img {
+  width: 895px;
+  max-width: 90vh; /* gør den responsiv eller tilpasser rig viduet*/
+  height: auto;
+  display: block;
+}
+
+header {
+  position: relative;
+  background-color: #CC0FD0;
+  padding: 8em 6em;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 32em 0 3em 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+header h1 {
+  font-family: "Modak", cursive;
+  font-size: 10vh;
+  font-weight: 400;
+  margin: 0;
+  line-height: 100px;
+}
+header .tagline {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.4em;
+}
+header #start-button {
+  display: inline-block;
+  font-family: "Modak", cursive;
+  background-color: #fff;
+  color: #FF8001;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+  margin-top: 1em;
+}
+header #start-button:hover {
+  transform: scale(1.05);
+}
+
+.foedder {
+  position: absolute;
+  top: 55em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.foedder img {
+  width: 700px;
+  height: auto;
+}
+
+.game-section {
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: #74832F;
+}
+.game-section h2 {
+  font-family: "Modak", cursive;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 100px;
+  margin: 1em 0 1em 0;
+  z-index: 1;
+  position: relative;
+}
+.game-section .icons-bg {
+  position: absolute;
+  min-height: auto;
+  margin-bottom: 2rem;
+  z-index: 0;
+}
+.game-section .question-card {
+  position: relative;
+  background-color: #ffba75;
+  border: 26px solid #FF8001;
+  padding: 3em;
+  border-radius: 30px;
+  margin: 0 auto;
+  max-width: 900px;
+  color: #fff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-bottom: 4em;
+}
+.game-section .question-card .question-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8em;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.game-section .question-card .question-sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #800783;
+  text-align: left;
+  margin: 1.5em 0 3em 0;
+}
+.game-section .question-card h5 {
+  font-family: "Modak", cursive;
+  font-size: 2em;
+  line-height: normal;
+}
+.game-section .question-card .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.game-section .question-card .buttons button {
+  font-size: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.game-section .question-card .buttons button.like {
+  color: green;
+}
+.game-section .question-card .buttons button.dislike {
+  color: red;
+}
+.game-section .question-card .buttons button:hover {
+  transform: scale(1.2);
+}
+.game-section .question-card .next-button {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.5em;
+  font-family: "Modak", cursive;
+  border-radius: 50px;
+  border: none;
+  background-color: #CC0FD0;
+  color: #fff;
+  transition: all 0.2s ease;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.05em;
+}
+.game-section .question-card .next-button:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */
