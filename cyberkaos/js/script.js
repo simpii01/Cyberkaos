@@ -1,3 +1,4 @@
+'use strict';
 const userAnswers = []; // Liste til at gemme brugerens valg
 
 
@@ -88,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const q = questions[currentQuestion];
     feedbackText.textContent = q.feedback[choice]; //viser feedback til valgt svar 
     userAnswers.push(choice);
-    localStorage.setItem('cyberkaosAnswers', JSON.stringify(userAnswers));
+    localStorage.setItem('cyberkaosAnswers', JSON.stringify(userAnswers)); // Gem i browserens localStorage
     feedbackBox.classList.remove("hidden");
   
     // Skjul svarknapper og h5
